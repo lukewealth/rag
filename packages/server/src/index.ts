@@ -171,8 +171,8 @@ const config: AppConfig = {
     conversations,
     generateUserPrompt,
     systemPrompt,
-    maxUserMessagesInConversation: 25,
-    createConversationCustomData: !isProduction ? CreateCustomData : undefined,
+    maxUserMessagesInConversation: 100,
+    createConversationCustomData: CreateCustomData,
   },
 
   maxRequestTimeoutMs: 30000,
