@@ -1,0 +1,22 @@
+{
+  "name": "suiai",
+  "version": "1.0.0",
+  "description": "Chat Bot proficient in the sui move programming language",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "ingest:all": "npm run ingest:all --workspace=ingest",
+    "dev": "npm run dev --workspace=server & npm run dev --workspace=ui"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.0.56"
+  }
+}

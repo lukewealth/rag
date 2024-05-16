@@ -1,0 +1,24 @@
+{
+  "name": "ingest",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "ingest:all": "npm run build && ingest all --config build/ingest.config.js --since 1970"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb-rag-core": "^0.3.0",
+    "mongodb-rag-ingest": "^0.1.8"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.3.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
